@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <style>
+        #printScore {
+            white-space: pre;
+        }
+    </style>
+
+</head>
+<body>
+<!--<span id="jumpHere"></span>-->
+<section class="container-fluid">
+    <section class="row m-0 p-0">
+        <section class="col-6">
+            <!-- Result Page -->
+            <section class="d-none mt-5 mb-0" id="finalResult" style="padding-left: 300px !important">
+                <p class=""><b>All done!</b></p>
+                <p class="finalScore"></p>
+                <label for="initials">Enter Initials:</label>
+                <input type="text" id="initials" name="initials" placeholder="Enter Your Initials" style="border:1px inset blue">
+                <input type="submit" value="submit" id="submit" style="background-color: purple; color:white; border-radius:2px">
+            </section>
+            <!-- High Score Page -->
+            <section class="d-none mt-5" id="highScore" style="padding-left: 300px !important">
+                <h6>High Scores</h6>
+                <div name="printScore" id="printScore" style="width:350px; background-color: pink; margin-bottom: 16px"></div>
+                <input type="submit" value="Go Back" id="back" style="background-color: purple; color:white; border-radius:2px">
+                <input type="submit" value="Clear History" id="clear" style="background-color: purple; color:white; border-radius:2px">
+            </section>
+        </section>
+
+        <!-- Start Page -->
+        <section class="col-3" id="startSection">
+            <div class="mt-1" id="start" style="">
+                <a href="" class="btn btn-secondary start">Start Quiz</a>
+            </div>
+        </section>
+        <section>
+            <div class="text-left">
+                <span class="timeCount" style=" margin-top:0px;"></span>
+            </div>
+        </section>
+    </section>
+
+
+</section>
+<!-- question Page -->
+<section class="container-fluid">
+    <section class="row">
+        <section class="col-6 offset-1">
+            <p id="Quest"></p>
+            <ul id="Answer" class="list-unstyled"></ul>
+            <div id="hrLine">
+                <p id="demo"></p>
+            </div>
+        </section>
+    </section>
+</section>
+
+<script src="script6.js"></script>
+</body>
+</html>
